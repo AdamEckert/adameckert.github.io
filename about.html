@@ -4,28 +4,30 @@
 <head>
     <title>Adam Eckert - Game Design Portfolio</title>
     <meta charset="utf-8">
-    <link href="portfolio.css" rel="stylesheet">
+    <link href="/portfolio.css" rel="stylesheet">
+    <link rel="import" href="/header.html">
+    <script src="/imageselect.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+    <script>
+        $(function()
+        {
+            $('#header').load('/header.html', function() {
+                getRandomGif();
+                document.getElementById("page-container").style.visibility="visible";
+            });
+        });
+    </script>
 </head>
 
 <body>
     <div id="page-container">
         <div id="wrapper">
 
-            <header>
-                <div id="name">
-                    <a href="index.html">
-                        <h1>Adam Eckert</h1>
-                        <p>Game Designer</p>
-                    </a>
-                </div>
-                <nav>
-                    <a href="index.html">Home</a>
-                    |
-                    <a href="portfolio.html">Portfolio</a>
-                    |
-                    <a href="about.html">About</a>
-                </nav>
-            </header>
+            <div id="header">
+            </div>
 
             <main>
                 <div id="heading">
@@ -39,8 +41,7 @@
                 </div>
                 <div id="section">
                     <a href="Temp.pdf" download>Download Resume</a>
-                    <iframe id="pdf" src="Temp.pdf" width="100%" height="800px">
-                    </iframe>
+                    <img id="pdfpreview" src="images/pdf.png">
                 </div>
                 
                 

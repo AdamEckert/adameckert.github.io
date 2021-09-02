@@ -27,6 +27,7 @@ a:hover
 }
 #page-container
 {
+    visibility: hidden;
     position: relative;
     min-height: 100vh;
     width: 50%;
@@ -61,7 +62,9 @@ header
     padding-left: 0.7em;
     font-size: 15pt;
     text-shadow: 0.05em 0.05em #0b4040;
-    
+}
+#title{
+    width:280px;
 }
 #name a
 {
@@ -171,11 +174,12 @@ main
     text-decoration: underline;
     font-size: 18pt;
     font-weight: bold;
-    /*text-shadow: 0.05em 0.05em #802e17;*/
 }
 
-#pdf
+#pdfpreview
 {
+    width: 100%;
+    margin: auto;
     margin-top: 1em;
 }
 #video
