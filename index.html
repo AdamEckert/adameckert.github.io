@@ -1,130 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-	<head>
-		<title>Adam Eckert</title>
-		<link rel="stylesheet" href="style.css">
-	</head>
+<head>
+    <title>Adam Eckert - Game Design Portfolio</title>
+    <meta charset="utf-8">
+    <link href="portfolio.css" rel="stylesheet">
+    <script src="imageselect.js"></script>
+</head>
 
-	<body>
-	
-		<header>
-			<a name="top"></a>
-			<h1>Adam Eckert</h1>
-			<h2>Programmer - Game Designer - Artist</h2>
-			<div class="topnav">
-				<a href="#about">About</a>
-				<a href="#projects">Projects</a>
-				<a href="mailto:adameckert3141@gmail.com">Contact</a>
-			</div>
-		</header>
-		
-		<main>
-			
-			<a name="about"></a>
-			<div class="maindiv">
-				<h1>About Me</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				Nullam lobortis, erat quis suscipit porttitor, ligula ante vulputate augue,
-				at molestie odio nunc at ligula.
-				Phasellus a varius risus. Sed luctus eros sed tellus viverra condimentum.
-				Nulla pharetra nulla eu efficitur ultricies.
-				Donec nec est placerat, euismod ex et, fermentum sem.
-				Praesent eu lectus et sapien elementum viverra a eget mauris.</p>
-			</div>
-			
-			<a name="projects"></a>
-			<div class="maindiv">
-				<h1>Projects</h1>
-				<div class="projects">
-					<!-- Space Bubby -->
-					<div class="project">
-						<h3>Space Bubby</h3>
-						<a href="https://illdie.itch.io/space-bubby">
-						<img src="imgs\bubby.gif" height="200" width="300">
-						</a>
-						<a href="https://illdie.itch.io/space-bubby">
-						<div>Itch.io Page</div>
-						</a>
-						<a href="">
-						<div>View Documentation</div>
-						</a>
-						<div> <!-- Description text -->
-							Jan 2018-May 2018</br>
-							Team Size: 2</br>
-							Roles: Lead Designer, Character Designer/Artist, Lead Programmer, Production Manager</br>
-							Contributions: All art assets, enemy attack documentation
-						</div>
-					</div>
-				
-					<!-- Chromaslice -->
-					<div class="project">
-						<h3>Chromaslice</h3>
-						<a href="https://25percentgames.itch.io/chromaslice">
-						<img src="imgs\slice.png" height="200" width="300">
-						</a>
-						<a href="https://25percentgames.itch.io/chromaslice">
-						<div>Itch.io Page</div>
-						</a>
-						<div> <!-- Description text -->
-							</br>
-							Aug 2017-May 2018</br>
-							Team Size: 20+</br>
-							Roles: Mechanics Designer</br>
-							Contributions: Player movement design/implementation, active ability design, playtesting/balance tweaks
-						</div>
-					</div>
-				
-					<!-- Ruin Ascension -->
-					<div class="project">
-						<h3>Ruin Ascension (Demo)</h3>
-						<a href="https://illdie.itch.io/ruin-ascension-demo">
-						<img src="imgs\ruin.png" height="200" width="300">
-						</a>
-						<a href="https://illdie.itch.io/ruin-ascension-demo">
-						<div>Itch.io Page</div>
-						</a>
-						<a href="">
-						<div>View Documentation</div>
-						</a>
-						<div> <!-- Description text -->
-							Oct 2018</br>
-							Team Size: 1</br>
-							Roles: Sole Designer, Artist, and Programmer</br>
-							Made for "devtober", I worked on the game on my own every day of October 2018.
-						</div>
-					</div>
-				
-					<!-- Kuri -->
-					<div class="project">
-						<h3>Kuri</h3>
-						<a href="https://illdie.itch.io/kuri">
-						<img src="imgs\kuri.png" height="200" width="300">
-						</a>
-						<a href="https://illdie.itch.io/kuri">
-						<div>Itch.io Page</div>
-						</a>
-						<a href="">
-						<div>View Documentation</div>
-						</a>
-						<div> <!-- Description text -->
-							Aug 2016-May 2017</br>
-							Team Size: 1</br>
-							Roles: Sole Designer, Artist, and Programmer</br>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-		</main>
-		
-		<footer>
-		<div class="topnav">
-			<a href="#top">Back to Top</a>
-			<a href="mailto:adameckert3141@gmail.com">Contact</a>
-		</div>
-		</footer>
-	
-	</body>
+<body onload="getRandomGif()">
+    <div id="page-container">
+        <div id="wrapper">
 
+            <header>
+                <div id="name">
+
+                    <div id="headergif"></div>
+                    
+                    <a href="index.html">
+                        <h1>Adam Eckert</h1>
+                        <p>Game Designer</p>
+                    </a>
+                </div>
+                <nav>
+                    <a href="index.html">Home</a>
+                    |
+                    <a href="portfolio.html">Portfolio</a>
+                    |
+                    <a href="about.html">About</a>
+                </nav>
+            </header>
+
+            <main>
+                <div id="heading">
+                    <h1>Hi, I'm Adam!</h1>
+                </div>
+                <div id="section">
+                    Welcome to my portfolio website!
+                    <br><br>
+                    I am a game designer and a 2021 graduate of Arizona State University, where I studied Informatics and took a certificate in video game development at the Fulton Schools of Engineering.
+                    I was also a participant in the Video Game Development Club at ASU. Here, I led the Design Team as a Design Officer, developing documentation standards for our annual game projects and training new members on documentation and Unity basics.
+                    <br>
+                    From the moment in my youth that I realized <i>people</i> make the games we play, it has been my goal to be a game developer. At first, I merely thought it would be a cool job. Now that I've learned more about the practical and emotional impacts of design, I realize the power of such work, and hope to be an advocate for inclusivity and accessibility in games.
+                    <br><br>
+                    <a href="Temp.pdf" download>Download Resume</a>
+                    
+                </div>
+                <div id="heading">
+                    <h1>Selected Projects</h1>
+                </div>
+
+                <div id="images">
+                    
+                    <div id="icon-container">
+                        <a id="icon-large" href="projects/finalfrontiersman.html">
+                            <img src="images/squareicontest.png" alt="The Final Frontiersman">
+                        </a>
+                        <a id="iconlabel" href="projects/finalfrontiersman.html">
+                            The Final Frontiersman
+                        </a>
+                    </div>
+                    <div id="icon-container">
+                        <a id="icon-large" href="#about">
+                            <img src="images/squareicontest.png" alt="The Final Frontiersman">
+                        </a>
+                        <a id="iconlabel" href="#about">
+                            Documentation Guidelines
+                        </a>
+                    </div>
+                    <div id="icon-container">
+                        <a id="icon" href="#about">
+                            <img src="images/squareicontest.png" alt="The Final Frontiersman">
+                        </a>
+                        <a id="iconlabel" href="#about">
+                            Color Phase
+                        </a>
+                    </div>
+                    <div id="icon-container">
+                        <a id="icon" href="#about">
+                            <img src="images/squareicontest.png" alt="The Final Frontiersman">
+                        </a>
+                        <a id="iconlabel" href="#about">
+                            Color Phase
+                        </a>
+                    </div>
+                    <div id="icon-container">
+                        <a id="icon" href="#about">
+                            <img src="images/squareicontest.png" alt="The Final Frontiersman">
+                        </a>
+                        <a id="iconlabel" href="#about">
+                            Color Phase
+                        </a>
+                    </div>
+
+                </div>
+
+                <div id="portfolio-link">
+                    <a href="portfolio.html">
+                        Click here for full portfolio
+                    </a>
+                </div>
+                
+            </main>
+
+        </div>
+        <footer>
+            <a href="about.html">About</a>
+        </footer>
+    </div>
+</body>
 </html>
