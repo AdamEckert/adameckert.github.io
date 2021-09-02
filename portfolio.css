@@ -51,10 +51,11 @@ footer
     background-color: #FFB272;
 }
 
-header
+#header
 {
     color: #309696;
     font-weight: bold;
+    height: 128px;
 }
 #name
 {
