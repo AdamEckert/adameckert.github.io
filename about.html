@@ -14,6 +14,7 @@
     <script>
         $(function()
         {
+            $('#footer').load('/footer.html');
             $('#header').load('/header.html', function() {
                 getRandomGif();
                 document.getElementById("page-container").style.visibility="visible";
@@ -40,8 +41,8 @@
                     <h1>Resume</h1>
                 </div>
                 <div id="section">
-                    <a href="Temp.pdf" download>Download Resume</a>
-                    <img id="pdfpreview" src="images/pdf.png">
+                    <a href="Temp.pdf" download>Download Resume as PDF</a>
+                    <a href="Temp.pdf" download><img id="pdfpreview" src="images/pdf.png"></a>
                 </div>
                 
                 
@@ -51,7 +52,7 @@
 
         </div>
         <footer>
-            <a href="about.html">About</a>
+            <div id="footer"></div>
         </footer>
     </div>
 </body>

@@ -13,7 +13,9 @@
         crossorigin="anonymous"></script>
     <script>
         $(function()
-        {
+        {   
+            $('#selected').load('/selectedprojects.html');
+            $('#footer').load('/footer.html');
             $('#header').load('/header.html', function() {
                 getRandomGif();
                 document.getElementById("page-container").style.visibility="visible";
@@ -58,18 +60,14 @@
                     Games take a lot of work and it’s easy to feel down, but when things start coming together it can breathe new life into your motivation.
                 </div>
 
-
-                <div id="portfolio-link">
-                    <a href="portfolio.html">
-                        Back to full portfolio
-                    </a>
+                <div id="selected">
                 </div>
                 
             </main>
 
         </div>
         <footer>
-            <a href="../about.html">About</a>
+            <div id="footer"></div>
         </footer>
     </div>
 </body>

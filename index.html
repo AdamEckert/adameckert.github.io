@@ -13,7 +13,9 @@
         crossorigin="anonymous"></script>
     <script>
         $(function()
-        {
+        {   
+            $('#selected').load('/selectedprojects.html');
+            $('#footer').load('/footer.html');
             $('#header').load('/header.html', function() {
                 getRandomGif();
                 document.getElementById("page-container").style.visibility="visible";
@@ -44,66 +46,16 @@
                     <a href="Temp.pdf" download>Download Resume</a>
                     
                 </div>
-                <div id="heading">
-                    <h1>Selected Projects</h1>
-                </div>
-
-                <div id="images">
-                    
-                    <div id="icon-container">
-                        <a id="icon-large" href="projects/finalfrontiersman.html">
-                            <img src="images/squareicontest.png" alt="The Final Frontiersman">
-                        </a>
-                        <a id="iconlabel" href="projects/finalfrontiersman.html">
-                            The Final Frontiersman
-                        </a>
-                    </div>
-                    <div id="icon-container">
-                        <a id="icon-large" href="#about">
-                            <img src="images/squareicontest.png" alt="The Final Frontiersman">
-                        </a>
-                        <a id="iconlabel" href="#about">
-                            Documentation Guidelines
-                        </a>
-                    </div>
-                    <div id="icon-container">
-                        <a id="icon" href="#about">
-                            <img src="images/squareicontest.png" alt="The Final Frontiersman">
-                        </a>
-                        <a id="iconlabel" href="#about">
-                            Color Phase
-                        </a>
-                    </div>
-                    <div id="icon-container">
-                        <a id="icon" href="#about">
-                            <img src="images/squareicontest.png" alt="The Final Frontiersman">
-                        </a>
-                        <a id="iconlabel" href="#about">
-                            Color Phase
-                        </a>
-                    </div>
-                    <div id="icon-container">
-                        <a id="icon" href="#about">
-                            <img src="images/squareicontest.png" alt="The Final Frontiersman">
-                        </a>
-                        <a id="iconlabel" href="#about">
-                            Color Phase
-                        </a>
-                    </div>
-
-                </div>
-
-                <div id="portfolio-link">
-                    <a href="portfolio.html">
-                        Click here for full portfolio
-                    </a>
+                
+                <div id="selected">
                 </div>
                 
             </main>
 
         </div>
         <footer>
-            <a href="about.html">About</a>
+            <div id="footer">
+            </div>
         </footer>
     </div>
 </body>

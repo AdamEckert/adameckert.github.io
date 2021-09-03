@@ -14,6 +14,7 @@
     <script>
         $(function()
         {
+            $('#footer').load('/footer.html');
             $('#header').load('/header.html', function() {
                 getRandomGif();
                 document.getElementById("page-container").style.visibility="visible";
@@ -188,7 +189,7 @@
 
         </div>
         <footer>
-            <a href="about.html">About</a>
+            <div id="footer"></div>
         </footer>
     </div>
 </body>
