@@ -82,8 +82,9 @@ footer
 
 nav
 {
-    padding: 0.3em;
+    padding: 0.4em;
     padding-left: 0.8em;
+    padding-right: 0.5em;
     color: #802e17;
     background-color: #FFB272;
     word-spacing: 0.5em;
@@ -92,6 +93,12 @@ nav
 nav a:link
 {
     text-decoration: none;
+}
+nav a img
+{
+    float:right;
+    height:23px;
+    margin-left:0.8em;
 }
 
 main
@@ -117,6 +124,12 @@ main
     padding-bottom: 1em;
     padding-top: 1em;
     overflow: hidden;
+}
+
+#selected
+{
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 #images
