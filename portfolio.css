@@ -121,7 +121,7 @@ main
 #section
 {
     padding:2em;
-    padding-bottom: 1em;
+    padding-bottom: 0em;
     padding-top: 1em;
     overflow: hidden;
 }
@@ -135,7 +135,16 @@ main
 #images
 {
     width: 800px; /* 3 times cont width plus 6 times cont margin*/
-    height: 230px;
+    height: 270px;
+    /*background-color: #000000;*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+#images-large
+{
+    width: 800px; /* 3 times cont width plus 6 times cont margin*/
+    height: 520px;
     /*background-color: #000000;*/
     margin-left: auto;
     margin-right: auto;
@@ -143,9 +152,9 @@ main
 }
 #icon-container
 {
-    width: 148px;
-    height: 195px;
-    margin: 5px;
+    width: 180px;
+    height: 227px;
+    margin: 10px;
     margin-top:20px;
     margin-bottom: 0;
     float: left;
@@ -154,23 +163,23 @@ main
 }
 #icon
 {
-    width: 148px;
-    height: 148px;
+    width: 180px;
+    height: 180px;
     float: left;
     background-color: #309696;
     margin-bottom: 0.8em;
 }
 #icon-large
 {
-    width: 148px;
-    height: 148px;
+    width: 180px;
+    height: 180px;
     float: left;
     background-color: #309696;
     margin-bottom: 0.12em;
 }
 #icon img, #icon-large img
 {
-    width: 128px;
+    width: 160px;
     margin: 8px;
     border: solid;
     border-width: 2px;
