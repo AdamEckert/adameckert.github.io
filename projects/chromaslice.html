@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Adam Eckert - Game Design Portfolio</title>
+    <meta charset="utf-8">
+    <link href="/portfolio.css" rel="stylesheet">
+    <link rel="import" href="/header.html">
+    <script src="/imageselect.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+    <script>
+        $(function()
+        {   
+            $('#selected').load('/selectedprojects.html');
+            $('#footer').load('/footer.html');
+            $('#header').load('/header.html', function() {
+                getRandomGif();
+                document.getElementById("page-container").style.visibility="visible";
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="wrapper">
+
+            <div id="header">
+            </div>
+
+            <main>
+                <div id="heading">
+                    <h1>Chromaslice</h1>
+                </div>
+                <div id="section">
+                    Role: Design member
+                    <br>
+                    Contributions: Player movement, mechanics documentation
+                    <br>
+                    <br>
+                </div>
+
+                <div id="heading">
+                    <h1>Overview</h1>
+                </div>
+                <div id="section">
+                    <iframe class="r" id="video" width="480" height="270" src="https://www.youtube.com/embed/KsyOmWY2jMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <i>Chromaslice</i> is a simple, fast-paced party game where you and your teammate fight with the laser that tethers you together.
+                    You fight on 5 different maps, some with their own unique hazards or entities.
+                    <br>
+                    <br>
+                    This was the annual project in my first year of participating in the VGDC.
+                    I participated in design discussions and picked up miscellaneous tasks.
+                    Most notably, after a discussion with the project leads about how they wanted the player movement to feel, I prototyped a potential replacement system in GameMaker.
+                    After this was approved, I worked with a systems officer to implement the code in the project.
+                    <br>
+                    <br>
+                </div>
+                
+                <div id="heading">
+                    <h1>Lessons Learned</h1>
+                </div>
+                <div id="section">
+
+                    <b>Choose your battles.</b>
+                    <br>
+                    This project saw a lot of time and energy spent into debating the inclusion of certain elements.
+                    In the end, very few of these possibilities ended up in the game, and the extended discussions we had about them only got in the way of doing other, more important work
+                    (ask me about jumping...)
+                    <br>
+                    <br>
+                    As a club, we learned the importance of being aware when a bloated discussion starts to stall production.
+                    Going forward, the club president now serves as the final decision-maker to prevent situations like this again.
+                </div>
+
+                <div id="selected">
+                </div>
+                
+            </main>
+
+        </div>
+        <footer>
+            <div id="footer"></div>
+        </footer>
+    </div>
+</body>
+</html>
