@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Adam Eckert - Game Design Portfolio</title>
+    <meta charset="utf-8">
+    <link href="/portfolio.css" rel="stylesheet">
+    <link rel="import" href="/header.html">
+    <script src="/imageselect.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+    <script>
+        $(function()
+        {   
+            $('#selected').load('/selectedprojects.html');
+            $('#footer').load('/footer.html');
+            $('#header').load('/header.html', function() {
+                getRandomGif();
+                document.getElementById("page-container").style.visibility="visible";
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="wrapper">
+
+            <div id="header">
+            </div>
+
+            <main>
+                <div id="heading">
+                    <h1>Color Phase</h1>
+                </div>
+                <div id="section">
+                    Role: Design member
+                    <br>
+                    Contributions: Mechanics documentation, level design/implementation
+                    <br>
+                    <a href="https://heatwave-studios.itch.io/colorphase">Itch.io page</a> | 
+                    <a href="https://store.steampowered.com/app/956540/Color_Phase/">Steam page</a>
+                    <br>
+                    <br>
+                </div>
+
+                <div id="heading">
+                    <h1>Overview</h1>
+                </div>
+                <div id="section">
+                    <video class="r" id="video" width="480" height="270" controls>
+                        <source src="/videos/cphtrailer.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <i>Color Phase</i> is a color-based puzzle platformer.
+                    Play as Hue and swap between four different colors to overcome 20+ puzzles and platforming challenges!
+                    <br>
+                    <br>
+                    During this project, my greatest contributions were in the realm of mechanics documentation.
+                    The player character of the game can change into four different colors, each with unique ways of interacting with the game world.
+                    Another design member and I collaborated on creating the documentation for these mechanics, including an asset list for all the teams to reference when implementing them.
+                    <br>
+                    <br>
+                </div>
+                
+                <div id="heading">
+                    <h1>Lessons Learned</h1>
+                </div>
+                <div id="section">
+
+                    <b>Keep the project organized so everyone can be on the same page.</b>
+                    <br>
+                    Color Phase’s development was often obstructed by poor file management and inconsistencies in documentation between multiple designers and work sessions.
+                    Systems members would often ask the design team questions about what they were implementing, only to learn they were working off of outdated documentation (ask me about “Joey’s Cube”...)
+                    <br><br>
+                    At the end of this year, I was elected to be a design officer, so my first order of business was to create more formal <a href="/projects/colorphase.html#about">documentation and file management standards</a> to use within the club.
+                </div>
+
+                <div id="selected">
+                </div>
+                
+            </main>
+
+        </div>
+        <footer>
+            <div id="footer"></div>
+        </footer>
+    </div>
+</body>
+</html>
