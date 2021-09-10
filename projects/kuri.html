@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Adam Eckert - Game Design Portfolio</title>
+    <meta charset="utf-8">
+    <link href="/portfolio.css" rel="stylesheet">
+    <link rel="import" href="/header.html">
+    <script src="/imageselect.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+    <script>
+        $(function()
+        {   
+            $('#selected').load('/selectedprojects.html');
+            $('#footer').load('/footer.html');
+            $('#header').load('/header.html', function() {
+                getRandomGif();
+                document.getElementById("page-container").style.visibility="visible";
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="wrapper">
+
+            <div id="header">
+            </div>
+
+            <main>
+                <div id="heading">
+                    <h1>Kuri</h1>
+                </div>
+                <div id="section">
+                    Solo project (~6 months)
+                    <br>
+                    Top-down boss rush game with 3 bosses
+                    <br>
+                    <a href="https://illdie.itch.io/death-dweller">Itch.io page</a>
+                    <br>
+                    <br>
+                </div>
+
+                <div id="heading">
+                    <h1>Overview</h1>
+                </div>
+                <div id="section">
+                    While I had been developing as a hobbyist for years, Kuri was my first project to have a full, formal development cycle.
+                    Made as a project in my Senior year of high school, I learned to apply basic SCRUM concepts by setting project milestones and defining tasks for each sprint in order to fit my production schedule to the class deadlines.
+                    <br><br>
+                </div>
+
+                
+                <div id="section">
+                    <video class="r" id="video" width="320" height="180" controls>
+                        <source src="/videos/bandit.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+                
+                <div id="heading">
+                    <h1>Lessons Learned</h1>
+                </div>
+                <div id="section">
+
+                    <b>Keep the focus on the essentials.</b>
+                    <br>
+                    Kuri’s initial concept included an interactive upgrade system and some dialogue/cutscenes to explicitly state the lore of the world.
+                    However, I eventually realized that the scope and vision of the project would be better served by leaving out these elements,
+                    allowing me to focus solely on filling out the content of each battle and improving general gameplay stability.
+                    <br><br>
+                </div>
+
+                <div id="selected">
+                </div>
+                
+            </main>
+
+        </div>
+        <footer>
+            <div id="footer"></div>
+        </footer>
+    </div>
+</body>
+</html>
