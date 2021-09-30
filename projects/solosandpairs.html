@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Adam Eckert - Game Design Portfolio</title>
+    <meta charset="utf-8">
+    <link href="/portfolio.css" rel="stylesheet">
+    <link rel="import" href="/header.html">
+    <script src="/imageselect.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+    <script>
+        $(function()
+        {   
+            $('#selected').load('/selectedprojects.html');
+            $('#footer').load('/footer.html');
+            $('#header').load('/header.html', function() {
+                getRandomGif();
+                document.getElementById("page-container").style.visibility="visible";
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="wrapper">
+
+            <div id="header">
+            </div>
+
+            <main>
+                <div id="heading">
+                    <h1>Death Dweller</h1>
+                </div>
+                <div id="section">
+                    Solo project (GBJam 9, 11 days)
+                    <br>
+                    Top-down turn based RPG based on pairing party members together
+                    <br>
+                    <a target="_blank" rel="noopener noreferrer" href="https://illdie.itch.io/solos-and-pairs">Itch.io page</a>
+                    <br>
+                    <br>
+                </div>
+
+                <div id="heading">
+                    <h1>Overview</h1>
+                </div>
+                <div id="section">
+                    <i>Solos and Pairs</i> was my second game made for GBJam.
+                    This time, I decided to go in a different direction with emulating the Gameboy style and made a simple turn-based RPG.
+                    The idea originally came from the GMTK 2021 jam theme, "Joined Together", but it was clearly too large for a 48 hour jam.
+                    <br>
+                    The core mechanic of the game is based on using pairs of party members to fight enemies, and I'm happy with how well that was realized.
+                    I am also very happy with the music - I got a number compliments on the game's soundtrack, and it still sometimes gets stuck in my head!
+                    <br><br>
+                </div>
+
+                
+                <div id="section">
+                    <video class="r" id="video" width="320" height="180" controls>
+                        <source src="/videos/bandit.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    My goal with <i>Solos and Pairs</i> was to push myself outside of my typical comfort zone.
+                    Both in what I enjoy to play and what I am inspired to create, I have historically focused on more action-oriented, real-time games, often with little to no story.
+                    Mechanically, <i>Solos and Pairs</i> is obviously different in that it is a turn-based RPG.
+                    However, I also wanted to change my narrative focus to create a more "wholesome" vibe.
+                    In a way, instead of focusing purely on "These are the cool bad guys that you're gonna kill!" I wanted to include "These are the good guys who are going to work together!"
+                    <br><br>
+                    My primary inspiration for this game was the Gameboy Color game <i>Dragon Quest Monsters 2</i> (or <i>Dragon Warrior Monsters</i>, as it was originally localized.)
+                    I have actually played very few turn-based RPGs, despite being interested in them, as I have difficulty feeling engrossed in their gameplay.
+                    <i>DQM2</i> is the only full-length game like this that I have played to completion, and my memories with it are some of my most treasured in my time as a gamer.
+                    <br><br>
+                    
+                    <br><br>
+                </div>
+                
+                
+                <div id="heading">
+                    <h1>Lessons Learned</h1>
+                </div>
+                <div id="section">
+
+                    <b>Do things the smart way, not the hard way!</b>
+                    <br>
+                    
+                    <br><br>
+                    asd
+                </div>
+
+                <div id="selected">
+                </div>
+                
+            </main>
+
+        </div>
+        <footer>
+            <div id="footer"></div>
+        </footer>
+    </div>
+</body>
+</html>
