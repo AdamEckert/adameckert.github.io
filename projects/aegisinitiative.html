@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Adam Eckert - Game Design Portfolio</title>
+    <meta charset="utf-8">
+    <link href="/portfolio.css" rel="stylesheet">
+    <link rel="import" href="/header.html">
+    <script src="/imageselect.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+    <script>
+        $(function()
+        {   
+            $('#selected').load('/selectedprojects.html');
+            $('#footer').load('/footer.html');
+            $('#header').load('/header.html', function() {
+                getRandomGif();
+                document.getElementById("page-container").style.visibility="visible";
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="wrapper">
+
+            <div id="header">
+            </div>
+
+            <main>
+                <div id="heading">
+                    <h1>Aegis Initiative</h1>
+                </div>
+                <div id="section">
+                    Role: Design Officer
+                    <br>
+                    Contributions: New member training, General documentation, Oversaw and assisted with stage implementation
+                    <br>
+                    <br>
+                </div>
+
+                <div id="heading">
+                    <h1>Overview</h1>
+                </div>
+                <div id="section">
+                    This project saw our members divided among smaller ~5-person “cells”, each with members from our art, systems, and design teams.
+                    As an officer, my responsibility was to regularly check in with each of these teams, understand where they are and what they need, and facilitate communication between them and other parties.
+                    This included formal meetings between each team and all the officers at certain project milestones where we verified that each cell’s work was progressing according to schedule.
+                    <br>
+                    <br>
+                </div>
+                
+                <div id="heading">
+                    <h1>Lessons Learned</h1>
+                </div>
+                <div id="section">
+
+                    <b>Keep the limitations of your team and resources in mind when deciding on your development structure.</b>
+                    <br>
+                    <br>
+                    Our more modular approach to development during this project did have some benefits, but it ultimately was not a feasible approach for us at the time.
+                    Due to our completely voluntary approach to the club, some amount of participation drop-off every year is inevitable, which decimated some of our small development modules.
+                    Officers had to fill in the gaps, but many teams were left unworkably sparse.
+                    <br>
+                    <br>
+                    <b>Sometimes projects don’t come together, and that’s okay.</b>
+                    <br>
+                    <br>
+                    Our existing issues with our development structure coincided with the onset of the COVID-19 pandemic, rendering our remaining members with very little wherewithal for club participation and unable to complete the project.
+                    As sad as it is to see your work not come to fruition, it’s an occasional reality of all creative projects, and you can apply the lessons from these cases to future endeavors.
+                </div>
+
+                <div id="selected">
+                </div>
+                
+            </main>
+
+        </div>
+        <footer>
+            <div id="footer"></div>
+        </footer>
+    </div>
+</body>
+</html>
