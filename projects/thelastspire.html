@@ -50,19 +50,18 @@
                     <h1>Overview</h1>
                 </div>
                 <div id="section">
-                    Working under interesting limitations and using clever tricks to create unique, striking effects (especially 3D effects) are two of my favorite things to do in game development.
-                    While these are represented in a number of games on my portfolio, <i>The Last Spire</i> encapsulates them both especially strongly.
+                    Working under interesting limitations and using clever tricks to create fun visual effects (especially 3D effects) are two of my favorite things to do in game development, and <i>The Last Spire</i> is a great example of this.
+                </div>
+                <div id="section">
+                    <video class="r" id="video" width="320" height="180" controls>
+                        <source src="/videos/tlsvideo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    My goal with this game was to create a 3D gamespace without any of the 3D functionality built into GameMaker to create an authentic retro look... and just for the sake of trying it out!
+                    I had a blast conceptualizing and building the infrastructure for this game (which could be seen as an extension of the approach I took in <i><a href="finalfrontiersman.html">The Final Frontiersman</a></i>)
+                    from its multiple coordinate systems to the rendering pipeline. I love talking about how I've implemented this sort of thing, so ask if you want to hear about it!
                     <br><br>
-                    Developing the systems of <i>The Last Spire</i> was tons of fun, especially since its first person perspective was kind of a continuation of the systems I had created for <i><a href="finalfrontiersman.html">The Final Frontiersman</a></i>.
-                    In <i>TFF</i>, entities had internal polar coordinates representing their location around the central planet, which would then be translated into cartesian screenspace coordinates for rendering.
-                    This is also true for <i>TLS</i>, as it too featured a rotating field of view around a stationary center.
-                    However, some enemy behavior in <i>TLS</i> is relative to the world instead of the player's axis of rotation, so I also gave them a cartesian world-space coordinate.
-                    All of this means that, for the basic enemy, movement is calculated in 3D cartesian space, converted to cylindrical coordinates relative to the player, and <i>then</i> converted into 2D screenspace coordinates for rendering.
-                    <br><br>
-                    Planning and implementing this all on the fly in 48 hours was a challenge, but my goodness if it wasn't a blast to program!
-                    As I'm writing this, my mind still can't help but think about different ways I could push this system to its limits.
-                    Even with the game's flaws, which I'll discuss in the Lessons Learned section, I feel very satisfied thinking back to what I was able to do with it.
-                    <br><br>
+                    Planning and implementing this all on the fly in 48 hours was a challenge, and it certainly wasn't without flaw, but I thoroughly enjoyed the project and I feel very satisfied with what I was able to do with it.
                 </div>
                 
                 <div id="heading">
@@ -72,16 +71,16 @@
 
                     <b>Don't assume it'll just work out, PLAYTEST!</b>
                     <br>
-                    Having run through most of my development time, at the end of the jam I was mostly in a rush to add a small handful of enemy types and ship the game, as well as a simple local high score system.
-                    However, I did not leave enough time to properly playtest, and as such the final product ended up with a wildly unbalanced mothership enemy that made the game basically entirely unplayable past wave 6.
-                    As much fun as it was to develop all these systems, it was very disappointing to realize that this insane difficulty spike meant players wouldn't get to properly enjoy them.
+                    Having run through most of my development time, the end of the jam saw me scrambling to implement a few last minute features without properly playtesting them all.
+                    As such, the final product ended up with a wild difficulty spike around wave 6.
+                    While I had fun developing these systems, it was disappointing to see players unable to spend much time with them due to the game's poor balancing.
                     <br><br>
 
-                    <b>Always be re-evaluating what contributes to the experience and what takes away from it.</b>
+                    <b>Keep evaluating what adds or takes away from the experience.</b>
                     <br>
-                    Aside from the endeavor of mimicking 3D behavior, I also gave myself the input limitation of having the entire game playable with only a D-Pad and two buttons, similar to the restrictions of the Game Boy Jam.
-                    While I always have fun designing around such a simplified control system, the feedback I most consistently received was that the game would feel much better had I implemented mouse controls.
-                    I never even stopped to consider that players might feel this way during development, as I had already mentally moved on by the time I entered the deep mathematical stupor that was most of this game's development process.
+                    Alongside the 3D effect, I also adhered to the same input limitations seen in the GBJam just for fun.
+                    While I have fun designing under such constraints, the most consistent feedback the game received was that it would feel much better had it supported mouse controls.
+                    Such a thought never crossed my mind during development, but it serves as a reminder that what I have the most fun with as a designer doesn't always necessarily result in the best player experience.
                     <br><br>
                     
                 </div>
