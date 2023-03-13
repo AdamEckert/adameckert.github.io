@@ -130,6 +130,13 @@ main
     padding-top: 1em;
     overflow: hidden;
 }
+#bottom-section
+{
+    padding:2em;
+    padding-bottom: 2em;
+    padding-top: 1em;
+    overflow: hidden;
+}
 
 #selected
 {
@@ -141,6 +148,15 @@ main
 {
     width: 800px; /* 3 times cont width plus 6 times cont margin*/
     height: 270px;
+    /*background-color: #000000;*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+#images-selected
+{
+    width: 800px; /* 3 times cont width plus 6 times cont margin*/
+    height: 260px;
     /*background-color: #000000;*/
     margin-left: auto;
     margin-right: auto;
@@ -197,7 +213,7 @@ main
 }
 #portfolio-link
 {
-    height: 2em;
+    height: 0.5em;
     text-align: center;
     text-decoration: underline;
     font-size: 18pt;
